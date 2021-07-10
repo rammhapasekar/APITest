@@ -18,6 +18,7 @@
 		3F269CC426949FD000F93DB7 /* APIRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F269CC326949FD000F93DB7 /* APIRepository.swift */; };
 		3F269CC626949FFB00F93DB7 /* APIRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F269CC526949FFB00F93DB7 /* APIRepositoryTests.swift */; };
 		3F269CC82694A0D600F93DB7 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F269CC72694A0D600F93DB7 /* Movie.swift */; };
+		3FF95DE726981D49006B1EC7 /* sonar-project.properties in Resources */ = {isa = PBXBuildFile; fileRef = 3FF95DE626981D49006B1EC7 /* sonar-project.properties */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,8 @@
 		3F269CC326949FD000F93DB7 /* APIRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRepository.swift; sourceTree = "<group>"; };
 		3F269CC526949FFB00F93DB7 /* APIRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRepositoryTests.swift; sourceTree = "<group>"; };
 		3F269CC72694A0D600F93DB7 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		3FF95DE626981D49006B1EC7 /* sonar-project.properties */ = {isa = PBXFileReference; lastKnownFileType = text; path = "sonar-project.properties"; sourceTree = "<group>"; };
+		3FF95DE826981F44006B1EC7 /* run-sonar-swift.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "run-sonar-swift.sh"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +88,8 @@
 		3F269C8726949F2200F93DB7 = {
 			isa = PBXGroup;
 			children = (
+				3FF95DE826981F44006B1EC7 /* run-sonar-swift.sh */,
+				3FF95DE626981D49006B1EC7 /* sonar-project.properties */,
 				3F269C9226949F2200F93DB7 /* APITest */,
 				3F269CA926949F2300F93DB7 /* APITestTests */,
 				3F269CB426949F2300F93DB7 /* APITestUITests */,
@@ -242,6 +247,7 @@
 			files = (
 				3F269CA026949F2300F93DB7 /* LaunchScreen.storyboard in Resources */,
 				3F269C9D26949F2300F93DB7 /* Assets.xcassets in Resources */,
+				3FF95DE726981D49006B1EC7 /* sonar-project.properties in Resources */,
 				3F269C9B26949F2200F93DB7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -385,6 +391,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -439,6 +446,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;

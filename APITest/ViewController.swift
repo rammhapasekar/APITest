@@ -19,8 +19,18 @@ class ViewController: UIViewController {
     apiRepository = APIRepository()
     apiRepository.session = URLSession(configuration: .default)
     apiRepository.getMovies{ movies, error in
-      print("fetched movies : ",movies)
-      print("error while fetching movie list : ",error)
+      guard let moviesArray = movies else{
+        assert(movies == nil, "movies response is empty")
+        return
+      }
+      
+      guard let err = error else{
+        assert(error == nil, "error is empty")
+        return
+      }
+      
+      print("fetched movies : ",moviesArray)
+      print("error while fetching movie list : ",err)
     }
   }
 }
